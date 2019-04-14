@@ -1,5 +1,5 @@
 # allan_variance
-Synthetic IMU error models based on first order Gauss-Markov process and corresponding allan variance analysis
+Synthetic IMU error models based on first order Gauss-Markov processes and corresponding allan variance analysis.
   
 I'm hoping to expand upon this at some point in the future and create more of an educational tool, but for now here is just a dump of things I have learned.
 
