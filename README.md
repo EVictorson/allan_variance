@@ -60,12 +60,17 @@ process (gauss markov process) may be modeled with the following
 differential equation: dx/dt = (-1/tau) * x + N(mu, sigma)
 which is just an exponentially decaying autoregressive term with
 driven white noise.
+  
 The discrete time version of this is:   
+  
 x(n+1) = x(n) * exp((-1/tau) * dt) + N(mu,sigma) * dt
    
 The first order gauss-markov process may also be defined in terms of
-its autocorrelation function: Rxx = (sigma^2)*exp(-beta*tau), where sigma
-is the ENTIRE process variation (not the driven noise variation), beta is
+its autocorrelation function:   
+  
+Rxx = (sigma^2) * exp(-beta * tau)  
+  
+where sigma is the ENTIRE process variation (not the driven noise variation), beta is
 the inverse of the correlation time T = 1/beta (time constant), and tau is
 the autocorrelation time lag.  For sufficiently long time series (much 
 longer than the time constant), the autocorrelation plot of the first order 
@@ -113,7 +118,10 @@ Tc = argmax_sampling_interval / 1.89, where argmax_sampling_interval is
 the allan deviation sampling interval that maximizes the allan deviation.
 The driven noise magnitude may then be found with the following
 relationship:  
-qc = sigma_max / (0.437 * sqrt(Tc)), where sigma_max is the allan
+  
+qc = sigma_max / (0.437 * sqrt(Tc)) 
+  
+where sigma_max is the allan
 deviation maxima.
   
 If the combined output of all of these Gauss-Markov processes are
